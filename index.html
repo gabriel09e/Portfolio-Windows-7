@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfólio Windows 7</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+
+  <main class="desktop" id="desktop">
+    <div class="grid-icons">
+
+      <button class="desktop-icon" data-id="steam-roxa">
+        <div class="folder-icon folder-purple">
+          <i class="fa-solid fa-folder"></i>
+        </div>
+        <span>Steam Roxa</span>
+      </button>
+
+      <button class="desktop-icon" data-id="cardapio">
+        <div class="folder-icon folder-red">
+          <i class="fa-solid fa-folder"></i>
+        </div>
+        <span>Cardápio Massa Viva</span>
+      </button>
+
+      <button class="desktop-icon" data-id="formulario-goat">
+        <div class="folder-icon folder-green">
+          <i class="fa-solid fa-folder"></i>
+        </div>
+        <span>Formulário Goat</span>
+      </button>
+
+      <button class="desktop-icon" data-id="tenis-spacex">
+        <div class="folder-icon folder-blue">
+          <i class="fa-solid fa-folder"></i>
+        </div>
+        <span>Tênis Aero SpaceX</span>
+      </button>
+
+      <button class="desktop-icon" data-id="calculadoras">
+        <div class="folder-icon folder-orange">
+          <i class="fa-solid fa-folder"></i>
+        </div>
+        <span>Site Calculadoras</span>
+      </button>
+
+      <button class="desktop-icon" data-id="sobre-mim">
+        <div class="user-avatar-icon">
+          <i class="fa-solid fa-user-gear"></i>
+        </div>
+        <span>Sobre Mim</span>
+      </button>
+
+    </div>
+  </main>
+
+  <aside class="start-menu" id="startMenu">
+    <header class="start-header">
+      <div class="user-avatar-small">
+        <i class="fa-solid fa-user-astronaut"></i>
+      </div>
+      <div class="user-info">
+        <h3>Gabriel Cunha</h3>
+        <p>FullStack Developer</p>
+      </div>
+    </header>
+
+    <nav class="start-list">
+      <button class="start-item" data-id="sobre-mim">
+        <i class="fa-solid fa-user"></i>
+        <span>Sobre Mim</span>
+      </button>
+      <div class="divider"></div>
+      <button class="start-item" data-id="steam-roxa">
+        <i class="fa-solid fa-folder folder-purple-text"></i>
+        <span>Steam Roxa</span>
+      </button>
+      <button class="start-item" data-id="cardapio">
+        <i class="fa-solid fa-folder folder-red-text"></i>
+        <span>Cardápio Massa Viva</span>
+      </button>
+      <button class="start-item" data-id="formulario-goat">
+        <i class="fa-solid fa-folder folder-green-text"></i>
+        <span>Formulário Goat</span>
+      </button>
+      <button class="start-item" data-id="tenis-spacex">
+        <i class="fa-solid fa-folder folder-blue-text"></i>
+        <span>Tênis Aero SpaceX</span>
+      </button>
+      <button class="start-item" data-id="calculadoras">
+        <i class="fa-solid fa-folder folder-orange-text"></i>
+        <span>Site Calculadoras</span>
+      </button>
+    </nav>
+
+    <footer class="start-footer">
+      <button class="shutdown-btn">
+        <i class="fa-solid fa-power-off"></i> Desligar
+      </button>
+    </footer>
+  </aside>
+
+  <footer class="taskbar">
+    <button class="start-btn" id="startBtn">
+      <i class="fa-brands fa-windows"></i>
+      <span>Start</span>
+    </button>
+
+    <div class="system-tray">
+      <span id="clock">00:00</span>
+    </div>
+  </footer>
+
+  <div class="modal-overlay" id="modalOverlay">
+    <article class="window-modal">
+
+      <header class="window-header">
+        <div class="window-controls">
+          <button class="control-btn close" id="closeWindowBtn" title="Fechar"></button>
+          <button class="control-btn minimize" disabled></button>
+          <button class="control-btn maximize" disabled></button>
+        </div>
+        <h2 class="window-title" id="modalTitle">Título do Projeto</h2>
+      </header>
+
+      <div class="window-body" id="modalBody">
+      </div>
+
+    </article>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
